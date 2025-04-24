@@ -1,24 +1,23 @@
 <script lang="ts">
+	import kysymys from '$lib/data/kysymykset.json';
+	const testi = kysymys.objects;
+	const a = testi[0].kysymykset;
+	const toimiiko = a[0].img;
+	const otsikko = a[0].kysymys;
+	const vastaukset = a[0].vastaukset;
 </script>
 
 <main>
 	<div class="keskellä">
 		<div class="kysymys">
-			<img src="/testi.png" alt="Kuva" />
+			<img src={toimiiko} alt="Kuva" />
 		</div>
-		<h1>Mitä tämä koodi tarkoittaa?</h1>
-		<h1>Mitä tämä koodi tarkoittaa?</h1>
+		<h1>{otsikko}</h1>
 	</div>
 
-	<div class="vastaus">
-		<button>Se on koodia</button>
-	</div>
-	<div class="vastaus">
-		<button>Se tulostaa jotain</button>
-	</div>
-	<div class="vastaus">
-		<button>Koodi kutsuu foo funktiota, joka tulostaa taulukon</button>
-	</div>
+	{#each vastaukset as vastaus}
+		<button>{vastaus}</button>
+	{/each}
 </main>
 
 <style>
@@ -43,12 +42,6 @@
 	.keskellä {
 		margin: auto;
 		width: 80%;
-		padding: 2px;
-		text-align: center;
-	}
-
-	.vastaus {
-		margin: auto;
 		padding: 2px;
 		text-align: center;
 	}

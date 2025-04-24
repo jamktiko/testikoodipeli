@@ -85,15 +85,15 @@
 
 // //Kysymys 5: Mitä koodi tulostaa?
 
-function never() {
-	let answer = 'gonna give u up';
-	if (answer) {
-		answer += ' Never gonna let u down';
-	}
-	return answer;
-}
+// function never() {
+// 	let answer = 'gonna give u up';
+// 	if (answer) {
+// 		answer += ' Never gonna let u down';
+// 	}
+// 	return answer;
+// }
 
-console.log('Never ' + never());
+// console.log('Never ' + never());
 
 // /*
 // Vastausvaihtoehdot:
