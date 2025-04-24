@@ -5,6 +5,9 @@
 	const toimiiko = a[0].img;
 	const otsikko = a[0].kysymys;
 	const vastaukset = a[0].vastaukset;
+	//pitäisi käyttää fetchiä ja asynkronisuutta
+	//ehkä onMount????
+	//pitää vaihtaa json paikkaa
 </script>
 
 <main>
