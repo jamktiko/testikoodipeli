@@ -7,7 +7,6 @@
 			<img src="/testi.png" alt="Kuva" />
 		</div>
 		<h1>Mitä tämä koodi tarkoittaa?</h1>
-		<h1>Mitä tämä koodi tarkoittaa?</h1>
 	</div>
 
 	<div class="vastaus">
